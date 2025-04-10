@@ -2,8 +2,8 @@
 #include <WebServer.h>
 #include <ESP32Servo.h>
 
-const char* ssid = "Online";
-const char* password = "arjun2005";
+const char* ssid = "//your laptop hotspot name";
+const char* password = "//password";
 
 // Motor pins
 #define IN1 25
