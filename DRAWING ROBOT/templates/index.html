@@ -94,7 +94,7 @@
             for (const line of lines) {
                 try {
                     console.log(`Sending line ${completed + 1}: ${line}`);
-                    const response = await fetch('http://192.168.137.198/gcode', { // Correct IP
+                    const response = await fetch('http://your esp32 ip/gcode', { // Correct IP
                         method: 'POST',
                         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                         body: `gcode=${encodeURIComponent(line)}`
